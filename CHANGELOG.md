@@ -4,6 +4,15 @@ All notable changes to CIDM2315 class will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+
+## [7.0.1] - 10/02/2022
+### Added
+- Add sample code of Week7 lecture
+- Add content of property for class Encapsulation
+
+## [6.0.1] - 09/23/2022
+### No new content, Have midterm exam in week6
+
 ## [5.0.1] - 09/16/2022
 ### Added
 - Add sample code of Week5 lecture

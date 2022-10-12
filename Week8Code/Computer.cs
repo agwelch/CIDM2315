@@ -1,6 +1,6 @@
 class Computer{
-    public int price = 0;
-    public string brand = string.Empty;
+    public int price {get;set;} = 0;
+    public string brand  {get;set;}= string.Empty;
     public Computer(int price, string brand){
         // this.price refers to price of object
         // price on the right side is local parameter

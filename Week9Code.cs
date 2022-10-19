@@ -104,8 +104,8 @@ class Program
             Console.WriteLine();
         }
 
-        foreach(int row in arr1){
-            Console.Write(row + " ");
+        foreach(int num in arr1){
+            Console.Write(num + " ");
         }
 
 

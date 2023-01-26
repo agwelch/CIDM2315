@@ -135,6 +135,35 @@ class Program
                 Console.WriteLine(y1);
                 y1++;
         }
+        
+        
+        //nested for loop
+        for(int row = 0; row<3; row++){
+          for(int col = 0; col <3; col++)
+          {
+                Console.Write(col);
+          }
+              Console.WriteLine("");
+         }
+
+         // conditional operator
+        // find max value from given two numbers
+        int num1, num2, max_num;
+        num1 = 10;
+        num2 = 20;
+        // if-else statement
+        if(num1 > num2){
+            max_num = num1;
+        }
+        else{
+            max_num = num2;
+        }
+        Console.WriteLine($"The max value is: {max_num}");
+
+        // Conditional operator
+        max_num = (num1 > num2) ? num1 : num2;
+        Console.WriteLine($"The max value is: {max_num}");
+
 
 
     }

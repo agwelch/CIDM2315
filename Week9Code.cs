@@ -110,30 +110,14 @@ class Program
 
 
 
-        // Exercise2
+        // Call Exercise2 mehtod
             Console.WriteLine("\n--------Exercise2----------");
-        // EvenElement(){
-        int[ , ] arr = {
+        int[ , ] arr_2d = {
             {1, 2, 3},
             {4, 5, 6},
             {7, 8, 9}
-            };
-
-            // method 1
-        foreach(int val in arr){
-            if(val%2==0){
-            Console.Write(val +" ");
-            }
-        }
-        // method 2
-        Console.WriteLine();
-        for (int row = 0; row < 3; row++) {
-            for (int col = 0; col<=2; col++) {
-            if(arr[row,col]%2==0){
-                Console.Write(arr[row, col]+" ");
-            }
-            }
-        }
+          };
+          Exercise2(arr_2d);
         
         Console.WriteLine("\n--------JaggedArr----------");
         // Jagged Array
@@ -151,4 +135,25 @@ class Program
         }
 
     }
+    
+        // EvenElement(){
+        static void Exercise2(int[,] arr_2d){
+            Console.WriteLine("--->Method1 with foreach");
+            // method 1
+            foreach(int val in arr_2d){
+              if(val%2==0){
+                Console.Write(val +" ");
+              }
+            }
+            // method 2
+            Console.WriteLine("\n--->Method2 with nested for loop");
+
+            for (int row = 0; row < 3; row++) {
+              for (int col = 0; col<=2; col++) {
+                if(arr_2d[row,col]%2==0){
+                  Console.Write(arr_2d[row, col]+" ");
+                }
+              }
+            }
+        }
 }

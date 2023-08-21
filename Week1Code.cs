@@ -22,6 +22,18 @@ class Program
         // Practice 1: Print Out Your Name 
         Console.WriteLine("Carl Zhang");
 
+        /* 
+        Multi-line comments (a pair of slash and asterisk):
+        Some long comment text to explain functionality code block
+        */
+        
+        // Single-line comment (two slashes): 
+        // Put single-line comment above the code line
+        
+        // tips: we can "commenting out" some of the code when debugging (testing) our program
+        // select the code we want to comment out
+        // press Ctrl+/  (Command+/ in macOS) to comment and uncomment code
+
         // Escape sequences
         // \t for a tab space.
         // \" for a double-quote.

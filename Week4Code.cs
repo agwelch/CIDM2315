@@ -10,7 +10,7 @@ class Program
         int int_num;
         int total = 0;
         for(int i =1; i<4; i++){
-            Console.WriteLine("Please input an integer: ");
+            Console.WriteLine($"Please input integer {i}: ");
             str_num = Console.ReadLine();
             int_num = Convert.ToInt16(str_num);
             total = total + int_num;

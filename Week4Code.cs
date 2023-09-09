@@ -5,6 +5,7 @@ class Program
     {
         Console.WriteLine("---------Week4 Lecture1---------");
         // Review Exercise
+        // Q1 1. Using a loop, ask user to input 3 integers and then print total of 3 given integers.
         string str_num;
         int int_num;
         int total = 0;
@@ -14,7 +15,31 @@ class Program
             int_num = Convert.ToInt16(str_num);
             total = total + int_num;
         }
-        Console.WriteLine($"The total is: {total}");
+        Console.WriteLine($"The total is: {total}");'
+            
+        // Q2. Write C# code that allows a user to login with a maximum of 3 attempts
+        string correctUsername = "alice";
+        string correctPassword = "alice123";
+        int maxAttempts = 3;
+
+        for (int attempt = 1; attempt <= maxAttempts; attempt++)
+        {
+            Console.Write("Enter username: ");
+            string username = Console.ReadLine();
+
+            Console.Write("Enter password: ");
+            string password = Console.ReadLine();
+
+            if (username == correctUsername && password == correctPassword)
+            {
+                Console.WriteLine("Login successful!");
+                break;
+            }
+            else
+            {
+                Console.WriteLine($"Login Failed. You have {maxAttempts - attempt} attempt(s) left.");
+            }
+        }
 
 
         // nested for loop

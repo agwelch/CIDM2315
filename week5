@@ -1,0 +1,102 @@
+Used Chat GPT
+
+using System;
+
+public class Program
+{
+    public static void Main()
+    {
+        int number1, number2;
+        
+        Console.WriteLine("Enter the first integer:");
+        number1 = Convert.ToInt32(Console.ReadLine());
+        
+        Console.WriteLine("Enter the second integer:");
+        number2 = Convert.ToInt32(Console.ReadLine());
+        
+        int largestNumber = GetLargestNumber(number1, number2);
+        
+        Console.WriteLine("The largest number is: " + largestNumber);
+    }
+    
+    public static int GetLargestNumber(int a, int b)
+    {
+        return a > b ? a : b;
+    }
+}
+// question 2
+{
+    public static void Main()
+    {
+        int number1, number2, number3, number4;
+        
+        Console.WriteLine("Enter the first integer:");
+        number1 = Convert.ToInt32(Console.ReadLine());
+        
+        Console.WriteLine("Enter the second integer:");
+        number2 = Convert.ToInt32(Console.ReadLine());
+        
+        Console.WriteLine("Enter the third integer:");
+        number3 = Convert.ToInt32(Console.ReadLine());
+        
+        Console.WriteLine("Enter the fourth integer:");
+        number4 = Convert.ToInt32(Console.ReadLine());
+        
+        int largestNumber = GetLargestNumber(number1, number2, number3, number4);
+        
+        Console.WriteLine("The largest number is: " + largestNumber);
+    }
+    
+    public static int GetLargestNumber(int a, int b, int c, int d)
+    {
+        int temp = GetLargestNumber(a, b);
+        return GetLargestNumber(temp, c) > d ? GetLargestNumber(temp, c) : d;
+    }
+    
+    public static int GetLargestNumber(int a, int b)
+    {
+        return a > b ? a : b;
+    }
+}
+// question 3
+{
+    int age = 2022 - birthYear;
+    return age >= 18;
+}
+  {
+        Console.WriteLine("Enter your username:");
+        string username = Console.ReadLine();
+        
+        Console.WriteLine("Enter your password:");
+        string password = Console.ReadLine();
+        
+        Console.WriteLine("Enter your password again:");
+        string confirmPassword = Console.ReadLine();
+        
+        Console.WriteLine("Enter your birth year:");
+        int birthYear = Convert.ToInt32(Console.ReadLine());
+        
+        bool isOver18 = CheckAge(birthYear);
+        
+        if (isOver18)
+        {
+            if (password == confirmPassword)
+            {
+                Console.WriteLine("Account is created successfully");
+            }
+            else
+            {
+                Console.WriteLine("Wrong password");
+            }
+        }
+        else
+        {
+            Console.WriteLine("Could not create an account");
+        }
+    }
+    
+    public static bool CheckAge(int birthYear)
+    {
+        int age = 2022 - birthYear;
+        return age >= 18;
+    }
